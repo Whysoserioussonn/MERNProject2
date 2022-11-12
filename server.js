@@ -1,3 +1,4 @@
+require('dotenv').config()
 const cookieParser = require('cookie-parser')
 const express = require('express')
 const app = express()
@@ -9,6 +10,8 @@ const { logger } = require('./middleware/logger')
 
 
 const PORT = process.env.PORT || 5000
+
+console.log(process.env.NODE_ENV)
 
 app.use(logger)
 

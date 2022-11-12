@@ -4,6 +4,7 @@
   "description": "Maintenance MERN App",
   "main": "server.js",
   "scripts": {
+    
     "test": "node server",
     "dev": "nodemon server"
   },

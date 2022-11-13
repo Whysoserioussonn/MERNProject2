@@ -10,11 +10,11 @@ const Welcome = () => {
 
             <p>{today}</p>
 
-            <h1>Repair Menu</h1>
+            <h1>Welcome!</h1>
 
-            <p><Link to="/dash/notes">View Repair Notes</Link></p>
+            <p><Link to="/dash/notes">View techNotes</Link></p>
 
-            <p><Link to="/dash/notes/new">Add New Repair Note</Link></p>
+            <p><Link to="/dash/notes/new">Add New techNote</Link></p>
 
             <p><Link to="/dash/users">View User Settings</Link></p>
 

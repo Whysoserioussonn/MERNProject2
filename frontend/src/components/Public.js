@@ -4,19 +4,18 @@ const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1> You've Reached the Maintenance/Repair Shop for <span className="nowrap">Spectrum Inc. </span></h1>
+                <h1>Welcome to <span className="nowrap">Dan D. Repairs!</span></h1>
             </header>
             <main className="public__main">
-                <p>Please Login in at the bottom where it says Employee Login.</p>
+                <p>Located in Beautiful Downtown Foo City, Dan D. Repairs  provides a trained staff ready to meet your tech repair needs.</p>
                 <address className="public__addr">
-                    Fill Out Repair Note on Next Page<br />
-                    After Loggin in<br />
-                    Any Questions/Concerns<br />
-                    Ask for Tito, Head Maintenance <br />
-                    <a href="tel:+15555555555">Call (555) 867-5309</a>
+                    Dan D. Repairs<br />
+                    555 Foo Drive<br />
+                    Foo City, CA 12345<br />
+                    <a href="tel:+15555555555">(555) 555-5555</a>
                 </address>
                 <br />
-                <p>Owner: Spectrum Inc.</p>
+                <p>Owner: Dan Davidson</p>
             </main>
             <footer>
                 <Link to="/login">Employee Login</Link>

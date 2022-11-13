@@ -4,15 +4,16 @@ const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>Welcome to <span className="nowrap">Spectrum Inc. </span></h1>
+                <h1> You've Reached the Maintenance/Repair Shop for <span className="nowrap">Spectrum Inc. </span></h1>
             </header>
             <main className="public__main">
-                <p>Located in Beautiful Downtown Hollywood, Spectrm Inc.  provides a trained staff ready to meet your maintenance/repair needs.</p>
+                <p>Please Login in at the bottom where it says Employee Login.</p>
                 <address className="public__addr">
-                    Spectrum<br />
-                    50 Blanch Ave<br />
-                    Hollywood, CA 90210<br />
-                    <a href="tel:+15555555555">(555) 555-5555</a>
+                    Fill Out Repair Note on Next Page<br />
+                    After Loggin in<br />
+                    Any Questions/Concerns<br />
+                    Ask for Tito, Head Maintenance <br />
+                    <a href="tel:+15555555555">Call (555) 867-5309</a>
                 </address>
                 <br />
                 <p>Owner: Spectrum Inc.</p>

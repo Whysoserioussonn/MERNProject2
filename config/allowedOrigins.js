@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  'https://spectrum-maintenance.onrender.com'
+  'http://localhost:3000'
   
 ]
 

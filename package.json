@@ -5,7 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "src": "cd frontend/src && npm start" ,
+    "server": "npm run dev",
+    "start-full-app": "concurrently \"npm run server\" \"npm run src\""
+
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,7 @@
   "homepage": "https://github.com/Whysoserioussonn/MERNProject2#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "concurrently": "^7.5.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "date-fns": "^2.29.3",

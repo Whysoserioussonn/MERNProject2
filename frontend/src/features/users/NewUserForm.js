@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react"
 import { useAddNewUserMutation } from "./usersApiSlice"
 import { useNavigate } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSave } from "@fortawesome/free-solid-svg-icons"
 import { ROLES } from "../../config/roles"
+import {GiSave} from "react-icons/gi"
 
 const USER_REGEX = /^[A-z]{3,20}$/
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
@@ -73,32 +72,32 @@ const NewUserForm = () => {
     })
 
     const errClass = isError ? "errmsg" : "offscreen"
-    const validUserClass = !validUsername ? 'form__input--incomplete' : ''
-    const validPwdClass = !validPassword ? 'form__input--incomplete' : ''
-    const validRolesClass = !Boolean(roles.length) ? 'form__input--incomplete' : ''
+    const validUserClass = !validUsername ? 'border-2 border-red-500 outline-2 outline-cyan-500' : ''
+    const validPwdClass = !validPassword ? 'border-2 border-red-500 outline-2 outline-cyan-500' : ''
+    const validRolesClass = !Boolean(roles.length) ? 'border-2 border-red-500 outline-2 outline-cyan-500' : ''
 
 
     const content = (
         <>
             <p className={errClass}>{error?.data?.message}</p>
 
-            <form className="form" onSubmit={onSaveUserClicked}>
-                <div className="form__title-row">
+            <form class="flex flex-col flex-nowrap max-w-screen-md gap-3" onSubmit={onSaveUserClicked}>
+                <div class="flex justify-between items-center">
                     <h2>New User</h2>
-                    <div className="form__action-buttons">
+                    <div class="gap-2 mr-2 flex justify-end items-center static">
                         <button
-                            className="icon-button"
+                            class="text-4xl w-12 h-12 bg-transparent border-0 text-white grid place-content-center hover:scale-150 hover:text-green-500 icon-button"
                             title="Save"
                             disabled={!canSave}
                         >
-                            <FontAwesomeIcon icon={faSave} />
+                            <GiSave />
                         </button>
                     </div>
                 </div>
-                <label className="form__label" htmlFor="username">
-                    Username: <span className="nowrap">[3-20 letters]</span></label>
+                <label  htmlFor="username">
+                    Username: <span class="whitespace-nowrap">[3-20 letters]</span></label>
                 <input
-                    className={`form__input ${validUserClass}`}
+                    className={`rounded-2xl p-2 text-black ${validUserClass}`}
                     id="username"
                     name="username"
                     type="text"
@@ -107,10 +106,10 @@ const NewUserForm = () => {
                     onChange={onUsernameChanged}
                 />
 
-                <label className="form__label" htmlFor="password">
-                    Password: <span className="nowrap">[4-12 chars incl. !@#$%]</span></label>
+                <label  htmlFor="password">
+                    Password: <span class="whitespace-nowrap">[4-12 chars incl. !@#$%]</span></label>
                 <input
-                    className={`form__input ${validPwdClass}`}
+                    className={`rounded-2xl p-2 text-black ${validPwdClass}`}
                     id="password"
                     name="password"
                     type="password"
@@ -118,17 +117,17 @@ const NewUserForm = () => {
                     onChange={onPasswordChanged}
                 />
 
-                <label className="form__label" htmlFor="roles">
+                <label  htmlFor="roles">
                     ASSIGNED ROLES:</label>
                 <select
                     id="roles"
                     name="roles"
-                    className={`form__select ${validRolesClass}`}
+                    className={`w-fit p-2 text-red-700 font-bold hover:bg-green-400 ${validRolesClass}`}
                     multiple={true}
                     size="3"
                     value={roles}
                     onChange={onRolesChanged}
-                >
+                > 
                     {options}
                 </select>
 

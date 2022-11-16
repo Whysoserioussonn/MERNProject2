@@ -28,7 +28,7 @@ const NotesList = () => {
   />
 
     if (isError) {
-        content = <p className="errmsg">{error?.data?.message}</p>
+        content = <p class="inline-block bg-white text-red-700 p-1 mb-2">{error?.data?.message}</p>
     }
 
     if (isSuccess) {
@@ -45,14 +45,14 @@ const NotesList = () => {
 
         content = (
             <table className="table table--notes">
-                <thead className="table__thead">
+                <thead class="sticky top-0">
                     <tr>
-                        <th scope="col" className="table__th note__status">Repair Order</th>
-                        <th scope="col" className="table__th note__created">Created</th>
-                        <th scope="col" className="table__th note__updated">Updated</th>
-                        <th scope="col" className="table__th note__title">Location</th>
-                        <th scope="col" className="table__th note__username">Assigned to</th>
-                        <th scope="col" className="table__th note__edit">Edit</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Repair Order</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Created</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Updated</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">>Location</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Assigned to</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Edit</th>
                     </tr>
                 </thead>
                 <tbody>

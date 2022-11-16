@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
 import { useUpdateNoteMutation, useDeleteNoteMutation } from "./notesApiSlice"
 import { useNavigate } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons"
 import useAuth from "../../hooks/useAuth"
+import {GiSave} from "react-icons/gi"
+import {FaTrashAlt} from "react-icons/fa"
 
 const EditNoteForm = ({ note, users }) => {
 
@@ -71,8 +71,8 @@ const EditNoteForm = ({ note, users }) => {
     })
 
     const errClass = (isError || isDelError) ? "errmsg" : "offscreen"
-    const validTitleClass = !title ? "form__input--incomplete" : ''
-    const validTextClass = !text ? "form__input--incomplete" : ''
+    const validTitleClass = !title ? "border-2 border-red-500 outline-2 outline-cyan-500" : ''
+    const validTextClass = !text ? "border-2 border-red-500 outline-2 outline-cyan-500" : ''
 
     const errContent = (error?.data?.message || delerror?.data?.message) ?? ''
 
@@ -81,11 +81,11 @@ const EditNoteForm = ({ note, users }) => {
     if (isManager || isAdmin) {
         deleteButton = (
             <button
-                className="icon-button"
+                class="text-4xl hover:scale-125 hover:text-red-600"
                 title="Delete"
                 onClick={onDeleteNoteClicked}
             >
-                <FontAwesomeIcon icon={faTrashCan} />
+                <FaTrashAlt />
             </button>
         )
     }
@@ -94,25 +94,25 @@ const EditNoteForm = ({ note, users }) => {
         <>
             <p className={errClass}>{errContent}</p>
 
-            <form className="form" onSubmit={e => e.preventDefault()}>
-                <div className="form__title-row">
-                    <h2>Repair Note #{note.ticket}</h2>
-                    <div className="form__action-buttons">
+            <form class="flex flex-col flex-nowrap max-w-screen-md gap-3" onSubmit={e => e.preventDefault()}>
+                <div class="flex justify-between items-center">
+                    <h2>Edit Repair Note #{note.ticket}</h2>
+                    <div>
                         <button
-                            className="icon-button"
+                            class="mt-2 text-4xl hover:scale-125 hover:text-blue-600 mr-2"
                             title="Save"
                             onClick={onSaveNoteClicked}
                             disabled={!canSave}
                         >
-                            <FontAwesomeIcon icon={faSave} />
+                            <GiSave />
                         </button>
                         {deleteButton}
                     </div>
                 </div>
-                <label className="form__label" htmlFor="note-title">
+                <label  htmlFor="note-title">
                     Location:</label>
                 <input
-                    className={`form__input ${validTitleClass}`}
+                    className={`rounded-2xl p-2 text-black ${validTitleClass}`}
                     id="note-title"
                     name="title"
                     type="text"
@@ -121,21 +121,21 @@ const EditNoteForm = ({ note, users }) => {
                     onChange={onTitleChanged}
                 />
 
-                <label className="form__label" htmlFor="note-text">
+                <label  htmlFor="note-text">
                     Problem:</label>
                 <textarea
-                    className={`form__input form__input--text ${validTextClass}`}
+                    className={`rounded-2xl p-2 text-black h-40 ${validTextClass}`}
                     id="note-text"
                     name="text"
                     value={text}
                     onChange={onTextChanged}
                 />
-                <div className="form__row">
-                    <div className="form__divider">
-                        <label className="form__label form__checkbox-container" htmlFor="note-completed">
+                <div class="flex flex-nowrap gap-8">
+                    <div class="flex flex-col gap-2">
+                        <label class=" flex items-center w-fit gap-2" htmlFor="note-completed">
                             WORK COMPLETE:
-                            <input
-                                className="form__checkbox"
+                            <input 
+                                class="w-6 h-6"
                                 id="note-completed"
                                 name="completed"
                                 type="checkbox"
@@ -144,21 +144,21 @@ const EditNoteForm = ({ note, users }) => {
                             />
                         </label>
 
-                        <label className="form__label form__checkbox-container" htmlFor="note-username">
+                        <label class=" flex items-center w-fit gap-2" htmlFor="note-username">
                             ASSIGNED TO:</label>
                         <select
                             id="note-username"
                             name="username"
-                            className="form__select"
+                            class="w-fit p-1 text-red-500"
                             value={userId}
                             onChange={onUserIdChanged}
                         >
                             {options}
                         </select>
                     </div>
-                    <div className="form__divider">
-                        <p className="form__created">Created:<br />{created}</p>
-                        <p className="form__updated">Updated:<br />{updated}</p>
+                    <div class="flex flex-col gap-2">
+                        <p > Created:<br />{created}</p>
+                        <p > Updated:<br />{updated}</p>
                     </div>
                 </div>
             </form>

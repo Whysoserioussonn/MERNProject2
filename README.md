@@ -46,16 +46,16 @@ https://fanciful-piroshki-652fd2.netlify.app/
 
 
 ## Installation Front End Dependencies
-```bash
- npx install create-react-app my-project
- npm install @reduxjs/toolkit
- jwt-decode     // a small browser library that helps decoding JWTs token 
- react-icons    //  small library that helps you add icons (from all different icon libraries) to your React apps.
- react-redux    //  an open-source JavaScript library used to manage application state.
- react-router-dom   // allows you to display pages and allow users to navigate them
- react-spinners     // collection of react loading spinners   
 
-```
+- npx install create-react-app my-project
+- npm install @reduxjs/toolkit
+- jwt-decode     // a small browser library that helps decoding JWTs token 
+- react-icons    //  small library that helps you add icons (from all different icon libraries) to your React apps.
+- react-redux    //  an open-source JavaScript library used to manage application state.
+- react-router-dom   // allows you to display pages and allow users to navigate them
+- react-spinners     // collection of react loading spinners   
+
+
 
 ## Installation Backend Dependencies
 

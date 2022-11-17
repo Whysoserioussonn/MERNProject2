@@ -40,6 +40,10 @@ https://fanciful-piroshki-652fd2.netlify.app/
 
 
 
+## CSS Framework and animation icons
+- tailwindcss
+- react-spinners
+
 
 ## Installation Front End Dependencies
 ```bash

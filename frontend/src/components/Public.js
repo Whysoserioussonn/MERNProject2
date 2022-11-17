@@ -12,7 +12,7 @@ const Public = () => {
                 <p class="text-amber-400 " > All employees are required to Login.</p>
                 <address class="text-amber-400">
                    Directions:<br />
-                    Login at the Bottom Lefthand Corner<br />
+                    Login at the Bottom Lefthand Corner.<br />
                     Fillout Repair Note<br />
                     Update Note as needed<br />
                     When complete, checkoff box. Manager will review.<br />

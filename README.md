@@ -74,7 +74,7 @@ https://fanciful-piroshki-652fd2.netlify.app/
 - mongoose-sequence //  plugin lets you create fields which autoincrement their value: 
 - uuid  // identifying information that needs to be unique within a system or network thereof
 
-```
+
 
 ## Recommended Visual Code Extentions
 - ES7+ React/Redux/React- Native snippets - loads functions with prefix statements example rafce

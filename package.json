@@ -8,7 +8,7 @@
     "dev": "nodemon server",
     "src": "cd frontend/src && npm start" ,
     "server": "npm run dev",
-    "start-full-app": "concurrently \"npm run server\" \"npm run src\""
+    "concurrently": "concurrently \"npm run server\" \"npm run src\""
 
   },
   "repository": {

@@ -88,5 +88,6 @@ https://fanciful-piroshki-652fd2.netlify.app/
     
 ## Screenshots
 
-![Welcome](https://user-images.githubusercontent.com/110546643/202546146-0d9595b8-0922-4def-b6b2-f4bef41b810d.JPG)
+![Welcome](https://user-images.githubusercontent.com/110546643/202546146-0d9595b8-0922-4def-b6b2-f4bef41b810d.jpg
+)
 

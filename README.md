@@ -17,10 +17,10 @@ The goal of this project was to create a MERN stack app and deploy it online.
 - Manage at least some part of state with the useReducer and useContext hooks (together) or ReduxLinks to an external site. (npm install @reduxjs/toolkit react-redux) 
 - Pull from a third party API - either client side with AJAX or server-side with an NPM
 
-I chose to make a Maintainence MERN stack app. At my job, we have this maitenence crew which uses a paper format to repair/maintain appliances int the building, so I thought maybe put that in app and make it easier to track progress of repair.
+I chose to make a Maintainence MERN stack app. At my job, we have this maitenence crew which uses a paper format to repair/maintain appliances in the building, so I thought maybe putting their paper form in an app to make it easier to track the progress of the repair.
 So basically, there will be 3 roles that can access this app: Adminstrator, Maintenance Manager, and Maintenance Employee.
-Only Administrator and Manager will have the authority to have full CRUD capability to create, delete,update, and view all repair notes and current employees that include their username and password. Employee will only be ability to read and update their current repair notes assigned by their manager and have the option of creating a new repair note. 
- The target end user for this project is a company with a maintenance crew that that want to be up to date with current repairs. 
+Only Administrator and Manager will have the authority to have full CRUD capability to create, delete,update, and view all repair notes and current employees. Employee will only have the ability to read and update their current repair notes assigned by their manager and have the option of creating a new repair note. 
+ The target end user for this project is a company that wants to be up to date with current repairs by using their phone or computer instead of trying to track down a maintenance employee. 
 
 # DEPLOYMENT LINK
 https://fanciful-piroshki-652fd2.netlify.app/

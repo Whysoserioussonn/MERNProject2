@@ -45,30 +45,30 @@ https://fanciful-piroshki-652fd2.netlify.app/
 ```bash
  npx install create-react-app my-project
  npm install @reduxjs/toolkit
- jwt-decode
- react-icons
- react-redux
- react-router-dom
- react-spinners
+ jwt-decode     // a small browser library that helps decoding JWTs token 
+ react-icons    //  small library that helps you add icons (from all different icon libraries) to your React apps.
+ react-redux    //  an open-source JavaScript library used to manage application state.
+ react-router-dom   // allows you to display pages and allow users to navigate them
+ react-spinners     // collection of react loading spinners   
 
 ```
 
 ## Installation Backend Dependencies
 
-```bash
-npm install bcrypt
-concurrently
-cookie-parser
-cors
-date-fns
-dotenv
-express
-express-async-handler
-express-rate-limit
-jsonwebtoken
-mongoose
-mongoose-sequence
-uuid
+
+- bcrypt  //  NPM library used to secure the user credentials in NodeJs.
+- concurrently  // a package which can run multiple npm scripts simultaneously
+- cookie-parser  //  a middleware which parses cookies attached to the client request object.
+- cors  // allow or restrict requested resources on a web server depend on where the HTTP request was initiated.
+- date-fns  // for manipulating JavaScript dates in a browser & Node
+- dotenv  // lightweight npm package that automatically loads environment variables from a . env file into the process
+- express  // a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
+- express-async-handler // middleware for handling exceptions inside of async express routes and passing them to your express error handlers.
+- express-rate-limit  //  prevents the same IP address from making too many requests that will help us prevent attacks like brute force.
+- jsonwebtoken //  mainly used for authentication. After a user signs in to an application, the application then assigns JWT to that user.
+- mongoose // library for MongoDB and Node. js.
+- mongoose-sequence //  plugin lets you create fields which autoincrement their value: 
+- uuid  // identifying information that needs to be unique within a system or network thereof
 
 ```
 
@@ -80,7 +80,7 @@ uuid
 ## Future Developments
 - Add a field to upload a picture of the repair/maintence problem
 - Add more roles such as Assistant Manager or Assistant Admin
-- Create some type of notitification back to Manager when repair is complete
+- Create an employee chatroom 
     
 ## Screenshots
 

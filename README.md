@@ -87,6 +87,7 @@ https://fanciful-piroshki-652fd2.netlify.app/
 - Create an employee chatroom 
     
 ## Screenshots
+- Welcome page
 
-
+![Welcome](https://user-images.githubusercontent.com/110546643/202549724-990ef987-8ee1-4692-8f0d-5bdacad5ff1f.JPG)
 

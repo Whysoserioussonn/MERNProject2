@@ -88,6 +88,8 @@ https://fanciful-piroshki-652fd2.netlify.app/
     
 ## Screenshots
 - Welcome page
-
 ![Welcome](https://user-images.githubusercontent.com/110546643/202549724-990ef987-8ee1-4692-8f0d-5bdacad5ff1f.JPG)
-
+- Login Page
+![employelogin](https://user-images.githubusercontent.com/110546643/202551477-e594fb1f-791b-48a9-8813-5843513b945a.JPG)
+- Repair List page
+![Repairlist](https://user-images.githubusercontent.com/110546643/202551579-f971f13c-3a48-4c14-b3ab-73d8d7d10b0a.JPG)

@@ -50,7 +50,7 @@ const NotesList = () => {
                         <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Repair Order</th>
                         <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Created</th>
                         <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Updated</th>
-                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">>Location</th>
+                        <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Location</th>
                         <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Assigned to</th>
                         <th scope="col" class="bg-amber-300 text-violet-700 text-left p-2 border-2 border-violet-400 font-bold">Edit</th>
                     </tr>
